@@ -1,0 +1,50 @@
+@media only screen and (max-width: 480px) {
+  .container {
+    margin-right: 20px;
+    margin-left: 20px;
+    border-bottom: 1px solid var(--second);
+  }
+
+  .title {
+    font-family: "Oswald", sans-serif;
+    font-size: 36px;
+    text-transform: uppercase;
+    text-align: left;
+    margin-top: 146px;
+    margin-bottom: 24px;
+    color: var(--primary);
+  }
+
+  .text {
+    font-family: "Fira Sans", sans-serif;
+    text-align: left;
+    line-height: 19px;
+    color: var(--primary);
+  }
+  .button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid var(--second);
+    border-radius: 25px;
+    margin: 24px auto;
+  }
+
+  .button_text {
+    font-family: "Fira Sans", sans-serif;
+    padding: 10px 12px 10px 16px;
+    color: var(--primary);
+  }
+  .arrow {
+    padding: 8px;
+    border-radius: 25px;
+    background-color: var(--second);
+  }
+}
+
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1280px) {
+}
+

@@ -1,0 +1,82 @@
+@media only screen and (max-width: 480px) {
+  .container {
+    margin-top: 24px;
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-bottom: 36px;
+  }
+
+  .adress {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    color: var(--primary);
+  }
+  .adress_text {
+    margin-bottom: 8px;
+    font-size: 16px;
+  }
+  .image img {
+    margin-top: 36px;
+    margin-bottom: 36px;
+    max-width: 100%;
+  }
+
+  .values_title {
+    font-family: "Oswald", sans-serif;
+    font-size: 28px;
+    text-transform: uppercase;
+    text-align: left;
+    color: var(--primary);
+  }
+  .values_text {
+    font-family: "Fira Sans", sans-serif;
+    text-align: left;
+    line-height: 19px;
+    color: var(--primary);
+    margin-top: 24px;
+    margin-bottom: 36px;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 197px);
+    gap: 24px;
+  }
+
+  .item {
+    text-align: center;
+    background-color: rgba(234, 237, 241, 1);
+  }
+  .item_header {
+    display: flex;
+    justify-content: flex-start;
+    margin: 12px;
+    border-bottom: 1px solid var(--second);
+  }
+
+  .item_title {
+    font-family: "Oswald", sans-serif;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: var(--primary);
+    margin-left: 8px;
+    margin-bottom: 51px;
+  }
+  .item_text {
+    font-family: "Fira Sans", sans-serif;
+    text-align: left;
+    font-size: 14px;
+    line-height: 17px;
+    padding: 0 12px;
+    color: var(--primary);
+  }
+}
+
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1280px) {
+}
