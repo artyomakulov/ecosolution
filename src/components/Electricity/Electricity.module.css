@@ -35,13 +35,6 @@
     font-weight: 700;
     margin-right: 8px;
   }
-  .title2 {
-    font-family: "Oswald", sans-serif;
-    font-size: 28px;
-    text-transform: uppercase;
-    text-align: start;
-    color: var(--primary);
-  }
 }
 
 @media only screen and (min-width: 481px) and (max-width: 768px) {

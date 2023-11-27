@@ -1,0 +1,39 @@
+.card {
+  width: 100%;
+  display: flex;
+  background-color: rgba(234, 237, 241, 1);
+  
+}
+
+.img {
+  width: 100%;
+}
+
+.title_block {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid var(--second);
+  padding: 27px 12px 24px 12px;
+}
+
+.title_text {
+  text-align: start;
+  font-family: "Fira Sans", sans-serif;
+  font-size: 18px;
+  color: var(--primary);
+}
+.desc_block {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px;
+  font-family: "Fira Sans", sans-serif;
+  font-size: 14px;
+  color: var(--primary);
+}
+
+.btn {
+  padding: 16px;
+  border-radius: 50px;
+  background-color: var(--second);
+}
