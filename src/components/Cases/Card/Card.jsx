@@ -3,7 +3,10 @@ import { ReactComponent as Arrow } from "../../../utils/images/arrow45deg.svg";
 
 import React from "react";
 
-const Card = ({ item }) => {
+const Card = ({ item, isVisible  }) => {
+  if (!isVisible) {
+    return null;
+  }
   return (
     <div className={css.card}>
       <div>
