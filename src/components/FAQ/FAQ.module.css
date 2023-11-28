@@ -59,6 +59,7 @@
     height: 14px;
     background-color: var(--primary);
     border-radius: 50%;
+    transition: color 0.3s;
   }
   .contactBtn {
     display: flex;
@@ -69,12 +70,23 @@
     border: 0;
     border-radius: 50px;
     cursor: pointer;
+    transition: color 0.3s;
+  }
+  .contactBtn:hover {
+    background-color: var(--primary);
   }
   .contactBtn_text {
     margin-right: 12px;
     font-family: "Fira Sans", sans-serif;
     text-align: center;
     font-size: 16px;
+    transition: color 0.3s;
+  }
+  .contactBtn:hover .contactBtn_text {
+    color: var(--second);
+  }
+  .contactBtn:hover .dot {
+    background-color: var(--second);
   }
 }
 

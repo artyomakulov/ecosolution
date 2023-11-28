@@ -32,7 +32,7 @@ const Contacts = () => {
         <div className={css.contact_block}>
           <p className={css.contact_type}>Adress:</p>
           <div className={css.contact_item}>
-            <Map className={css.contact_img} width={24} />
+            <Map className={css.contact_img} width={36} />
             <p className={css.contact_text}>
               79005, Ukraine, Lvivstreet. Shota Rustaveli, 7
             </p>
@@ -46,7 +46,7 @@ const Contacts = () => {
           </div>
         </div>
       </div>
-      <Form/>
+      <Form />
     </div>
   );
 };

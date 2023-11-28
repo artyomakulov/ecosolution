@@ -24,7 +24,15 @@
     border-radius: 50px;
     padding: 13px 14px;
     margin: 0 6px;
+    background-color: #fff;
+    stroke: var(--primary);
+    transition: stroke 0.3s;
   }
+  .btn:hover {
+    stroke: var(--second);
+    border: 1px solid var(--second);
+  }
+
   .num {
     font-family: "Fira Sans", sans-serif;
     font-size: 28px;

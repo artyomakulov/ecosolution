@@ -18,8 +18,8 @@ const Footer = () => {
         </div>
       </div>
       <div className={css.contact_item}>
-        <Facebook />
-        <Insta />
+        <Facebook className={css.contact_img} />
+        <Insta className={css.contact_img} />
       </div>
       <div className={css.adress}>
         <p>79005, Ukraine, Lvivstreet. Shota Rustaveli, 7</p>

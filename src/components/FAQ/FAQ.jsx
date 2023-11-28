@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import css from "./FAQ.module.css";
 import { ReactComponent as Add } from "../../utils/images/add.svg";
 import { ReactComponent as Minus } from "../../utils/images/minus.svg";
+import { ReactComponent as Down } from "../../utils/images/down.svg";
 
 const faqData = [
   {
@@ -79,7 +80,9 @@ const FAQ = () => {
         </p>
         <button className={css.contactBtn}>
           <span className={css.contactBtn_text}>Contact Us</span>
-          <span className={css.dot}></span>
+          <span className={css.dot}>
+            <Down />
+          </span>
         </button>
       </div>
     </div>

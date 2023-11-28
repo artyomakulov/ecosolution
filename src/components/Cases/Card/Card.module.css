@@ -2,7 +2,6 @@
   width: 100%;
   display: flex;
   background-color: rgba(234, 237, 241, 1);
-  
 }
 
 .img {
@@ -36,4 +35,11 @@
   padding: 16px;
   border-radius: 50px;
   background-color: var(--second);
+  stroke: var(--primary);
+  transition: stroke 0.3s;
+}
+
+.btn:hover {
+  background: var(--primary);
+  stroke: var(--second);
 }

@@ -22,11 +22,25 @@
     padding: 12px;
     background-color: var(--second);
     border-radius: 25px;
+    stroke: var(--primary);
+    transition: stroke 0.3s;
   }
+  .upBtn:hover {
+    stroke: var(--second);
+    background-color: var(--primary);
+  }
+
   .contact_item {
     display: flex;
     justify-content: center;
     gap: 8px;
+    stroke: var(--primary);
+    transition: stroke 0.3s;
+
+  }
+
+.contact_img:hover {
+    stroke: var(--second);
   }
   .adress {
     font-family: "Fira Sans", sans-serif;
