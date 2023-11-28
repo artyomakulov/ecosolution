@@ -78,7 +78,7 @@ const FAQ = () => {
           Didn't find the answer to your question?
         </p>
         <button className={css.contactBtn}>
-          <span className={css.contactBtn_text}>Contact us</span>
+          <span className={css.contactBtn_text}>Contact Us</span>
           <span className={css.dot}></span>
         </button>
       </div>

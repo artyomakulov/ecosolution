@@ -4,6 +4,7 @@ import About from "./components/About/About";
 import Electricity from "./components/Electricity/Electricity";
 import Cases from "./components/Cases/Cases";
 import FAQ from "./components/FAQ/FAQ";
+import Contacts from "./components/Contacts/Contacts";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <Electricity/>
       <Cases/>
       <FAQ/>
+      <Contacts/>
     </>
   );
 }

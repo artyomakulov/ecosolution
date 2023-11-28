@@ -1,0 +1,56 @@
+@media only screen and (max-width: 480px) {
+  .container {
+    margin: 36px 20px;
+  }
+  .title {
+    font-family: "Oswald", sans-serif;
+    font-size: 28px;
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--primary);
+    margin-bottom: 12px;
+  }
+  .contacts {
+    margin: 24px 0;
+  }
+  .contact_block {
+    width: 244px;
+  }
+  .contact_type {
+    text-align: start;
+    font-family: "Fira Sans", sans-serif;
+    font-size: 16px;
+    margin-bottom: 8px;
+    margin-top: 24px;
+
+    color: var(--primary);
+  }
+  .contact_item {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 12px;
+  }
+  .contact_img {
+    margin-right: 8px;
+  }
+  .contact_text {
+    font-family: "Fira Sans", sans-serif;
+    color: var(--primary);
+    text-align: start;
+  }
+  .contact_block:last-child .contact_item {
+    display: flex;
+    justify-content: flex-start;
+  }
+  .contact_block:last-child .contact_item:nth-child(1) .contact_img,
+  .contact_block:last-child .contact_item:nth-child(2) .contact_img {
+    margin: 12px;
+  }
+}
+
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1280px) {
+}
