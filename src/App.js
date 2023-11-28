@@ -5,6 +5,7 @@ import Electricity from "./components/Electricity/Electricity";
 import Cases from "./components/Cases/Cases";
 import FAQ from "./components/FAQ/FAQ";
 import Contacts from "./components/Contacts/Contacts";
+import Footer from "./components/Footer/Footer";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       <Cases/>
       <FAQ/>
       <Contacts/>
+      <Footer/>
     </>
   );
 }
