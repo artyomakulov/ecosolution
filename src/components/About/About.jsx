@@ -8,7 +8,7 @@ import { ReactComponent as Quality } from "../../utils/images/ranking.svg";
 
 const About = () => {
   return (
-    <div className={css.container}>
+    <div className={css.container} id="about">
       <div className={css.adress}>
         <p className={css.adress_text}>
           79005, Ukraine, Lvivstreet. Shota Rustaveli, 7

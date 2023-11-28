@@ -28,7 +28,7 @@
     border: 1px solid var(--second);
     border-radius: 25px;
     margin: 24px auto;
-    background-color: #fff;
+    background-color: var(--background);
     transition: color 0.3s;
   }
   .button:hover {

@@ -71,6 +71,7 @@
   align-items: center;
   border: 1px solid var(--second);
   border-radius: 25px;
+  background: rgba(234, 237, 241, 1);
 }
 .button:hover {
   background-color: var(--primary);

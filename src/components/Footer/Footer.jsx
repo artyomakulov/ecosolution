@@ -5,8 +5,8 @@ import { ReactComponent as Facebook } from "../../utils/images/facebook.svg";
 import { ReactComponent as Insta } from "../../utils/images/instagram.svg";
 import { ReactComponent as Logo } from "../../utils/images/logo.svg";
 
-
 import React from "react";
+import { Link } from "react-scroll";
 
 const Footer = () => {
   return (
@@ -16,7 +16,9 @@ const Footer = () => {
           <Logo src={logo} alt="logo" />
         </div>
         <div>
-          <UpBtn className={css.upBtn} />
+          <Link to="main" smooth={true} duration={500}>
+            <UpBtn className={css.upBtn} />
+          </Link>
         </div>
       </div>
       <div className={css.contact_item}>

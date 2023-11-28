@@ -8,7 +8,7 @@ import Form from "./Form/Form";
 
 const Contacts = () => {
   return (
-    <div className={css.container}>
+    <div className={css.container} id="contacts">
       <h2 className={css.title}>Contact us</h2>
       <div className={css.contacts}>
         <div className={css.contact_block}>

@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import css from "./FAQ.module.css";
+import { Link } from "react-scroll";
+
 import { ReactComponent as Add } from "../../utils/images/add.svg";
 import { ReactComponent as Minus } from "../../utils/images/minus.svg";
 import { ReactComponent as Down } from "../../utils/images/down.svg";
@@ -45,7 +47,7 @@ const FAQ = () => {
     setOpenQuestion(openQuestion === questionId ? null : questionId);
   };
   return (
-    <div className={css.container}>
+    <div className={css.container} id="faq">
       <h2 className={css.title}>Frequently Asked Questions</h2>
       <div>
         <ul>
@@ -78,12 +80,14 @@ const FAQ = () => {
         <p className={css.after_text}>
           Didn't find the answer to your question?
         </p>
-        <button className={css.contactBtn}>
-          <span className={css.contactBtn_text}>Contact Us</span>
-          <span className={css.dot}>
-            <Down />
-          </span>
-        </button>
+        <Link to="contacts" smooth={true} duration={500}>
+          <button className={css.contactBtn}>
+            <span className={css.contactBtn_text}>Contact Us</span>
+            <span className={css.dot}>
+              <Down />
+            </span>
+          </button>
+        </Link>
       </div>
     </div>
   );

@@ -14,7 +14,7 @@
     margin-left: 20px;
     top: 0;
     z-index: 100;
-    background-color: #fff;
+    background-color: var(--background);
   }
 
   .logo {
@@ -61,10 +61,10 @@
     justify-content: flex-start;
     border: 0;
     background-color: transparent;
-    color: #fff;
+    color: rgba(243, 245, 250, 1);
     font-family: "Fira Sans", sans-serif;
     font-size: 20px;
-    stroke: #fff;
+    stroke: rgba(243, 245, 250, 1);
     padding: 0 0 8px 0;
     margin: 24px 0 0px 0px;
   }
@@ -98,13 +98,13 @@
   }
 
   .list_item_text {
-    color: #fff;
+    color: rgba(243, 245, 250, 1);
     font-family: "Fira Sans", sans-serif;
     font-size: 24px;
     margin-right: 8px;
   }
   .arrow {
-    stroke: #fff;
+    stroke: rgba(243, 245, 250, 1);
   }
 }
 
