@@ -17,9 +17,12 @@
     background-color: #fff;
   }
 
-  .logo img {
-    max-width: 100%; 
+  .logo {
+    max-width: 100%;
     height: auto;
+  }
+  .logo:hover > svg > g > path {
+    fill: var(--second);
   }
 
   .burger {

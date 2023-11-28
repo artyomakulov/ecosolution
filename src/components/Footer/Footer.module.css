@@ -13,9 +13,12 @@
     width: 100%;
   }
 
-  .logo img {
+  .logo {
     max-width: 100%;
     height: auto;
+  }
+  .logo:hover > svg > g > path {
+    fill: var(--second);
   }
 
   .upBtn {
