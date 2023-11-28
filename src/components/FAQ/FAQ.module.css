@@ -1,0 +1,50 @@
+@media only screen and (max-width: 480px) {
+  .container {
+    margin: 0 20px;
+  }
+  .title {
+    font-family: "Oswald", sans-serif;
+    font-size: 28px;
+    text-align: left;
+    text-transform: uppercase;
+    color: var(--primary);
+    margin-bottom: 24px;
+  }
+  .question_form {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 0;
+    border-top: 1px solid var(--second);
+  }
+  .question {
+    font-family: "Fira Sans", sans-serif;
+    text-align: left;
+    font-size: 18px;
+    line-height: 21px;
+    color: var(--primary);
+  }
+  .answer {
+    font-family: "Fira Sans", sans-serif;
+    text-align: left;
+    font-size: 14px;
+    line-height: 17px;
+    color: var(--primary);
+    padding: 0 0 16px 24px;
+  }
+
+  button {
+    padding: 0;
+    margin: 0 8px 0 0;
+    border: 0;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+  }
+}
+
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1280px) {
+}

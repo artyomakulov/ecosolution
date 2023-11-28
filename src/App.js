@@ -3,6 +3,7 @@ import Main from "./components/Main/Main";
 import About from "./components/About/About";
 import Electricity from "./components/Electricity/Electricity";
 import Cases from "./components/Cases/Cases";
+import FAQ from "./components/FAQ/FAQ";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <About/>
       <Electricity/>
       <Cases/>
+      <FAQ/>
     </>
   );
 }
