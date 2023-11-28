@@ -19,7 +19,7 @@
     align-items: flex-end;
   }
 
-  button {
+  .btn {
     border: 1px solid var(--primary);
     border-radius: 50px;
     padding: 13px 14px;

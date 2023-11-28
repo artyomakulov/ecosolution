@@ -11,7 +11,9 @@ const Cases = () => {
   const totalCards = items.length;
 
   const handlePrevClick = () => {
-    setIndexActiveCard((prevIndex) => (prevIndex - 1 + totalCards) % totalCards);
+    setIndexActiveCard(
+      (prevIndex) => (prevIndex - 1 + totalCards) % totalCards
+    );
   };
 
   const handleNextClick = () => {
@@ -27,13 +29,14 @@ const Cases = () => {
       <h2 className={css.title}>Successful cases of our company</h2>
       <div className={css.slider}>
         <div className={css.num}>
-          0{indexActiveCard + 1} <span className={css.num2}>/0{totalCards}</span>
+          0{indexActiveCard + 1}{" "}
+          <span className={css.num2}>/0{totalCards}</span>
         </div>
         <div>
-          <button onClick={handlePrevClick}>
+          <button onClick={handlePrevClick} className={css.btn}>
             <Left />
           </button>
-          <button onClick={handleNextClick}>
+          <button onClick={handleNextClick} className={css.btn}>
             <Right />
           </button>
         </div>

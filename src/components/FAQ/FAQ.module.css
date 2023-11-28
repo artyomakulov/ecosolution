@@ -33,13 +33,48 @@
     padding: 0 0 16px 24px;
   }
 
-  button {
+  .openBtn {
     padding: 0;
     margin: 0 8px 0 0;
     border: 0;
     background-color: #fff;
     display: flex;
     align-items: center;
+  }
+  .after_text {
+    font-family: "Fira Sans", sans-serif;
+    text-align: center;
+    font-size: 18px;
+    color: var(--primary);
+    margin-top: 20px;
+  }
+  .contact_link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .dot {
+    width: 14px;
+    height: 14px;
+    background-color: var(--primary);
+    border-radius: 50%;
+  }
+  .contactBtn {
+    display: flex;
+    align-items: center;
+    padding: 10px 12px 10px 16px;
+    margin-top: 12px;
+    background-color: var(--second);
+    border: 0;
+    border-radius: 50px;
+    cursor: pointer;
+  }
+  .contactBtn_text {
+    margin-right: 12px;
+    font-family: "Fira Sans", sans-serif;
+    text-align: center;
+    font-size: 16px;
   }
 }
 

@@ -51,7 +51,7 @@ const FAQ = () => {
           {faqData.map((item) => (
             <li key={item.id}>
               <div className={css.question_form}>
-                <button>
+                <button className={css.openBtn}>
                   {openQuestion === item.id ? (
                     <Minus onClick={() => toggleAnswer(item.id)} />
                   ) : (
@@ -72,6 +72,15 @@ const FAQ = () => {
             </li>
           ))}
         </ul>
+      </div>
+      <div className={css.contact_link}>
+        <p className={css.after_text}>
+          Didn't find the answer to your question?
+        </p>
+        <button className={css.contactBtn}>
+          <span className={css.contactBtn_text}>Contact us</span>
+          <span className={css.dot}></span>
+        </button>
       </div>
     </div>
   );
