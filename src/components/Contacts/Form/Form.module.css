@@ -18,11 +18,15 @@
   margin-bottom: 28px;
   position: relative;
 }
+.lastContactType {
+  margin-bottom: 18px;
+}
 
 .input {
   border: 0;
-  height: 30px;
+  height: 22px;
   width: 100%;
+  padding: 8px 2px;
   border-bottom: 1px solid var(--second);
   background: rgba(234, 237, 241, 1);
   font-family: "Fira Sans", sans-serif;
@@ -57,4 +61,26 @@
 .message {
   height: 150px;
   resize: none;
+}
+.btn_pos {
+  display: flex;
+  justify-content: flex-end;
+}
+.button {
+  display: flex;
+  align-items: center;
+  border: 1px solid var(--second);
+  border-radius: 25px;
+}
+
+.button_text {
+  font-family: "Fira Sans", sans-serif;
+  font-size: 16px;
+  padding: 8px 12px 8px 14px;
+  color: var(--primary);
+}
+.arrow {
+  padding: 8px;
+  border-radius: 25px;
+  background-color: var(--second);
 }

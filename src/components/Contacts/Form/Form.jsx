@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import css from "./Form.module.css";
 import { Notify } from "notiflix/build/notiflix-notify-aio";
+import { ReactComponent as Arrow } from "../../../utils/images/arrow-right.svg";
 
 const Form = () => {
   const [name, setName] = useState("");
@@ -11,12 +12,14 @@ const Form = () => {
   const [isIncorrectEmail, setIsIncorrectEmail] = useState(false);
   const [isValidPhone, setIsValidPhone] = useState(null);
   const [isInvalidName, setIsInvalidName] = useState(false);
+  const [isFormValid, setIsFormValid] = useState(false);
 
   const handleNameChange = (e) => {
     const newName = e.target.value;
     setName(newName);
     const nameRegex = /^[^\d]+$/;
     setIsInvalidName(newName === "" ? null : !nameRegex.test(newName));
+    validateForm();
   };
 
   const handleEmailChange = (e) => {
@@ -26,14 +29,21 @@ const Form = () => {
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+/;
     setIsValidEmail(newEmail === "" ? null : emailRegex.test(newEmail));
     setIsIncorrectEmail(!emailRegex.test(newEmail));
+    validateForm();
   };
 
   const handlePhoneChange = (e) => {
     const newPhone = e.target.value;
+
+    console.log("newPhone:", newPhone);
+
     setPhone(newPhone);
 
     const phoneRegex = /^\d{12}$/;
     setIsValidPhone(newPhone === "" ? null : phoneRegex.test(newPhone));
+    console.log("isValidPhone:", isValidPhone);
+
+    validateForm();
   };
 
   const handleMessageChange = (e) => {
@@ -41,22 +51,22 @@ const Form = () => {
     setMessage(newMsg);
   };
 
-  const handleClick = (e) => {
+  const validateForm = () => {
+    setIsFormValid(!isInvalidName && isValidEmail);
+  };
+
+  const handleSubmit = (e) => {
     e.preventDefault();
     Notify.success(`Hello amigo`);
     setName("");
     setEmail("");
     setPhone("");
     setMessage("");
-    setIsValidEmail(null);
-    setIsIncorrectEmail(false);
-    setIsValidPhone(null);
-    setIsInvalidName(false);
   };
 
   return (
     <div className={css.message_form_container}>
-      <form className={css.message_form}>
+      <form className={css.message_form} onSubmit={handleSubmit}>
         <div className={css.contact_type}>
           <span className={css.contact_item}>* Full name:</span>
           <input
@@ -118,7 +128,6 @@ const Form = () => {
             name="phone"
             value={phone}
             onChange={handlePhoneChange}
-            required
             pattern="\d{12}"
             title="Enter a valid phone number (12 digits)"
           />
@@ -128,7 +137,7 @@ const Form = () => {
             </div>
           )}
         </div>
-        <div className={css.contact_type}>
+        <div className={`${css.contact_type} ${css.lastContactType}`}>
           <span className={css.contact_item}>Message:</span>
           <textarea
             className={`${css.input} ${css.message}`}
@@ -139,8 +148,9 @@ const Form = () => {
           />
         </div>
         <div className={css.btn_pos}>
-          <button className={css.button} type="submit" onClick={handleClick}>
-            SEND
+          <button className={css.button} type="submit" disabled={!isFormValid}>
+            <div className={css.button_text}>Send</div>
+            <Arrow className={css.arrow} width={16} />
           </button>
         </div>
       </form>
