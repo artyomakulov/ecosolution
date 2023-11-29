@@ -114,4 +114,66 @@
 }
 
 @media only screen and (min-width: 769px) and (max-width: 1280px) {
+  footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+  }
+
+  .container {
+    width: 708px;
+    margin: 0 30px;
+    padding: 40px 0 0 0;
+    border-top: 1px solid var(--second);
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .logo {
+    max-width: 100%;
+    height: auto;
+  }
+  .logo:hover > svg > g > path {
+    fill: var(--second);
+  }
+
+  .upBtn {
+    padding: 12px;
+    background-color: var(--second);
+    border-radius: 25px;
+    stroke: var(--primary);
+    transition: stroke 0.3s;
+  }
+  .upBtn:hover {
+    stroke: var(--second);
+    background-color: var(--primary);
+  }
+
+  .contact_item {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    stroke: var(--primary);
+    transition: stroke 0.3s;
+    left: 50%;
+    top: 39%;
+    position: absolute;
+  }
+
+  .contact_img:hover {
+    stroke: var(--second);
+  }
+  .adress {
+    width: 708px;
+    font-family: "Fira Sans", sans-serif;
+    line-height: 19px;
+    color: var(--primary);
+    display: flex;
+    justify-content: space-between;
+    margin: 16px 0;
+    gap: 16px;
+  }
 }

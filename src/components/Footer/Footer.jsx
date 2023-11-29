@@ -11,20 +11,23 @@ import { Link } from "react-scroll";
 const Footer = () => {
   return (
     <footer>
-      <div className={css.container}>
-        <div className={css.logo}>
-          <Logo src={logo} alt="logo" />
+      <div>
+        <div className={css.container}>
+          <div className={css.logo}>
+            <Logo src={logo} alt="logo" />
+          </div>
+          <div>
+            <Link to="main" smooth={true} duration={500}>
+              <UpBtn className={css.upBtn} />
+            </Link>
+          </div>
         </div>
-        <div>
-          <Link to="main" smooth={true} duration={500}>
-            <UpBtn className={css.upBtn} />
-          </Link>
+        <div className={css.contact_item}>
+          <Facebook className={css.contact_img} />
+          <Insta className={css.contact_img} />
         </div>
       </div>
-      <div className={css.contact_item}>
-        <Facebook className={css.contact_img} />
-        <Insta className={css.contact_img} />
-      </div>
+
       <div className={css.adress}>
         <p>79005, Ukraine, Lvivstreet. Shota Rustaveli, 7</p>
         <p>office@ecosolution.com</p>
