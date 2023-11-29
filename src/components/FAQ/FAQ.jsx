@@ -47,47 +47,49 @@ const FAQ = () => {
     setOpenQuestion(openQuestion === questionId ? null : questionId);
   };
   return (
-    <div className={css.container} id="faq">
-      <h2 className={css.title}>Frequently Asked Questions</h2>
-      <div>
-        <ul>
-          {faqData.map((item) => (
-            <li key={item.id}>
-              <div className={css.question_form}>
-                <button className={css.openBtn}>
-                  {openQuestion === item.id ? (
-                    <Minus onClick={() => toggleAnswer(item.id)} />
-                  ) : (
-                    <Add onClick={() => toggleAnswer(item.id)} />
-                  )}
-                </button>
-                <p className={css.question}>{item.question}</p>
-              </div>
-              {openQuestion === item.id && (
-                <p
-                  className={`${css.answer} ${
-                    openQuestion === item.id ? css.open : ""
-                  }`}
-                >
-                  {item.answer}
-                </p>
-              )}
-            </li>
-          ))}
-        </ul>
-      </div>
-      <div className={css.contact_link}>
-        <p className={css.after_text}>
-          Didn't find the answer to your question?
-        </p>
-        <Link to="contacts" smooth={true} duration={500}>
-          <button className={css.contactBtn}>
-            <span className={css.contactBtn_text}>Contact Us</span>
-            <span className={css.dot}>
-              <Down />
-            </span>
-          </button>
-        </Link>
+    <div className={css.section}>
+      <div className={css.container} id="faq">
+        <h2 className={css.title}>Frequently Asked Questions</h2>
+        <div>
+          <ul>
+            {faqData.map((item) => (
+              <li key={item.id}>
+                <div className={css.question_form}>
+                  <button className={css.openBtn}>
+                    {openQuestion === item.id ? (
+                      <Minus onClick={() => toggleAnswer(item.id)} />
+                    ) : (
+                      <Add onClick={() => toggleAnswer(item.id)} />
+                    )}
+                  </button>
+                  <p className={css.question}>{item.question}</p>
+                </div>
+                {openQuestion === item.id && (
+                  <p
+                    className={`${css.answer} ${
+                      openQuestion === item.id ? css.open : ""
+                    }`}
+                  >
+                    {item.answer}
+                  </p>
+                )}
+              </li>
+            ))}
+          </ul>
+        </div>
+        <div className={css.contact_link}>
+          <p className={css.after_text}>
+            Didn't find the answer to your question?
+          </p>
+          <Link to="contacts" smooth={true} duration={500}>
+            <button className={css.contactBtn}>
+              <span className={css.contactBtn_text}>Contact Us</span>
+              <span className={css.dot}>
+                <Down />
+              </span>
+            </button>
+          </Link>
+        </div>
       </div>
     </div>
   );

@@ -39,10 +39,9 @@
     gap: 8px;
     stroke: var(--primary);
     transition: stroke 0.3s;
-
   }
 
-.contact_img:hover {
+  .contact_img:hover {
     stroke: var(--second);
   }
   .adress {
@@ -56,6 +55,62 @@
 }
 
 @media only screen and (min-width: 481px) and (max-width: 768px) {
+  footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .container {
+    width: 480px;
+    margin: 0 20px;
+    padding: 24px 0;
+    border-top: 1px solid var(--second);
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .logo {
+    max-width: 100%;
+    height: auto;
+  }
+  .logo:hover > svg > g > path {
+    fill: var(--second);
+  }
+
+  .upBtn {
+    padding: 12px;
+    background-color: var(--second);
+    border-radius: 25px;
+    stroke: var(--primary);
+    transition: stroke 0.3s;
+  }
+  .upBtn:hover {
+    stroke: var(--second);
+    background-color: var(--primary);
+  }
+
+  .contact_item {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    stroke: var(--primary);
+    transition: stroke 0.3s;
+  }
+
+  .contact_img:hover {
+    stroke: var(--second);
+  }
+  .adress {
+    font-family: "Fira Sans", sans-serif;
+    color: var(--primary);
+    display: flex;
+    flex-direction: column;
+    margin: 24px 0;
+    gap: 16px;
+  }
 }
 
 @media only screen and (min-width: 769px) and (max-width: 1280px) {

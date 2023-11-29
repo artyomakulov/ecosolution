@@ -25,33 +25,35 @@ const Cases = () => {
   const nextCard = items[(indexActiveCard + 1) % totalCards];
 
   return (
-    <div className={css.container} id="cases">
-      <h2 className={css.title}>Successful cases of our company</h2>
-      <div className={css.slider}>
-        <div className={css.num}>
-          0{indexActiveCard + 1}{" "}
-          <span className={css.num2}>/0{totalCards}</span>
+    <div className={css.section}>
+      <div className={css.container} id="cases">
+        <h2 className={css.title}>Successful cases of our company</h2>
+        <div className={css.slider}>
+          <div className={css.num}>
+            0{indexActiveCard + 1}{" "}
+            <span className={css.num2}>/0{totalCards}</span>
+          </div>
+          <div>
+            <button onClick={handlePrevClick} className={css.btn}>
+              <Left />
+            </button>
+            <button onClick={handleNextClick} className={css.btn}>
+              <Right />
+            </button>
+          </div>
         </div>
-        <div>
-          <button onClick={handlePrevClick} className={css.btn}>
-            <Left />
-          </button>
-          <button onClick={handleNextClick} className={css.btn}>
-            <Right />
-          </button>
+        <div className={css.card}>
+          {items.map((item, index) => (
+            <Card
+              key={item.id}
+              item={item}
+              prevCard={prevCard}
+              activeCard={activeCard}
+              nextCard={nextCard}
+              isVisible={index === indexActiveCard}
+            />
+          ))}
         </div>
-      </div>
-      <div className={css.card}>
-        {items.map((item, index) => (
-          <Card
-            key={item.id}
-            item={item}
-            prevCard={prevCard}
-            activeCard={activeCard}
-            nextCard={nextCard}
-            isVisible={index === indexActiveCard}
-          />
-        ))}
       </div>
     </div>
   );

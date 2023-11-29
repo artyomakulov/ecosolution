@@ -5,6 +5,7 @@ import { ReactComponent as Burger } from "../../utils/images/menu.svg";
 import { ReactComponent as Logo } from "../../utils/images/logo.svg";
 import { ReactComponent as Arrow } from "../../utils/images/arrow45deg.svg";
 import { ReactComponent as Close } from "../../utils/images/close.svg";
+import { ReactComponent as Down } from "../../utils/images/down.svg";
 
 import React, { useState } from "react";
 
@@ -27,6 +28,17 @@ const Header = () => {
         <div>
           <Burger className={css.burger} width={16} onClick={openModal} />
         </div>
+        <div className={css.contact_us}>
+          <Link to="contacts" smooth={true} duration={500}>
+            <button className={css.contactBtn}>
+              <span className={css.contactBtn_text}>Contact Us</span>
+              <span className={css.dot}>
+                <Down />
+              </span>
+            </button>
+          </Link>
+        </div>
+
         {isModalOpen && (
           <div
             className={css.overlay}
