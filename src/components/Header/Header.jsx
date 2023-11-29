@@ -6,6 +6,8 @@ import { ReactComponent as Logo } from "../../utils/images/logo.svg";
 import { ReactComponent as Arrow } from "../../utils/images/arrow45deg.svg";
 import { ReactComponent as Close } from "../../utils/images/close.svg";
 import { ReactComponent as Down } from "../../utils/images/down.svg";
+import { ReactComponent as Facebook } from "../../utils/images/facebook.svg";
+import { ReactComponent as Insta } from "../../utils/images/instagram.svg";
 
 import React, { useState } from "react";
 
@@ -49,7 +51,8 @@ const Header = () => {
                 <div className={css.modalContent}>
                   <div className={css.cont}>
                     <button onClick={closeModal} className={css.btnClose}>
-                      <Close width={20} /> close
+                      <Close width={20} className={css.close} />
+                      <span className={css.btnClose_text}>close</span>
                     </button>
                     <ul className={css.list}>
                       <li>
@@ -113,6 +116,10 @@ const Header = () => {
                         </Link>
                       </li>
                     </ul>
+                    <div className={css.contact_item}>
+                      <Facebook className={css.contact_img} width={24} />
+                      <Insta className={css.contact_img} width={24} />
+                    </div>
                   </div>
                 </div>
               </div>

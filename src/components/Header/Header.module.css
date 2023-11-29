@@ -54,6 +54,7 @@
   }
 
   .modalContentContainer {
+    position: relative;
     width: 320px;
     margin: 36px auto 0 auto;
     border-radius: 25px;
@@ -116,6 +117,20 @@
   }
   .contact_us {
     display: none;
+  }
+
+  .contact_item {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom: 24px;
+    gap: 8px;
+    stroke: var(--background);
+    transition: stroke 0.3s;
+  }
+
+  .contact_img:hover {
+    stroke: var(--second);
   }
 }
 
@@ -201,7 +216,6 @@
     font-size: 20px;
     stroke: rgba(243, 245, 250, 1);
     padding: 0 0 8px 0;
-    margin: 24px 0 0px 0px;
   }
 
   .cont {
@@ -243,6 +257,19 @@
   }
   .contact_us {
     display: none;
+  }
+  .contact_item {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom: 24px;
+    gap: 8px;
+    stroke: var(--background);
+    transition: stroke 0.3s;
+  }
+
+  .contact_img:hover {
+    stroke: var(--second);
   }
 }
 
