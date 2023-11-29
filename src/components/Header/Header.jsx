@@ -40,78 +40,80 @@ const Header = () => {
         </div>
 
         {isModalOpen && (
-          <div
-            className={css.overlay}
-            //  onClick={closeModal}
-          >
-            <div className={css.modalContentContainer}>
-              <div className={css.modalContent}>
-                <div className={css.cont}>
-                  <button onClick={closeModal} className={css.btnClose}>
-                    <Close width={20} /> close
-                  </button>
-                  <ul className={css.list}>
-                    <li>
-                      <Link
-                        className={css.list_item}
-                        to="main"
-                        smooth={true}
-                        duration={500}
-                        onClick={closeModal}
-                      >
-                        <div className={css.list_item_text}>Main</div>
-                        <Arrow className={css.arrow} width={16} />
-                      </Link>
-                    </li>
-                    <li>
-                      <Link
-                        to="about"
-                        className={css.list_item}
-                        smooth={true}
-                        duration={500}
-                        onClick={closeModal}
-                      >
-                        <div className={css.list_item_text}>About</div>
-                        <Arrow className={css.arrow} width={16} />
-                      </Link>
-                    </li>
-                    <li>
-                      <Link
-                        to="cases"
-                        className={css.list_item}
-                        smooth={true}
-                        duration={500}
-                        onClick={closeModal}
-                      >
-                        <div className={css.list_item_text}>Cases</div>
-                        <Arrow className={css.arrow} width={16} />
-                      </Link>
-                    </li>
-                    <li>
-                      <Link
-                        to="faq"
-                        className={css.list_item}
-                        smooth={true}
-                        duration={500}
-                        onClick={closeModal}
-                      >
-                        <div className={css.list_item_text}>FAQ</div>
-                        <Arrow className={css.arrow} width={16} />
-                      </Link>
-                    </li>
-                    <li>
-                      <Link
-                        to="contacts"
-                        className={css.list_item}
-                        smooth={true}
-                        duration={500}
-                        onClick={closeModal}
-                      >
-                        <div className={css.list_item_text}>Contact Us</div>
-                        <Arrow className={css.arrow} width={16} />
-                      </Link>
-                    </li>
-                  </ul>
+          <div className={css.overlay_container}>
+            <div
+              className={css.overlay}
+              //  onClick={closeModal}
+            >
+              <div className={css.modalContentContainer}>
+                <div className={css.modalContent}>
+                  <div className={css.cont}>
+                    <button onClick={closeModal} className={css.btnClose}>
+                      <Close width={20} /> close
+                    </button>
+                    <ul className={css.list}>
+                      <li>
+                        <Link
+                          className={css.list_item}
+                          to="main"
+                          smooth={true}
+                          duration={500}
+                          onClick={closeModal}
+                        >
+                          <div className={css.list_item_text}>Main</div>
+                          <Arrow className={css.arrow} width={16} />
+                        </Link>
+                      </li>
+                      <li>
+                        <Link
+                          to="about"
+                          className={css.list_item}
+                          smooth={true}
+                          duration={500}
+                          onClick={closeModal}
+                        >
+                          <div className={css.list_item_text}>About</div>
+                          <Arrow className={css.arrow} width={16} />
+                        </Link>
+                      </li>
+                      <li>
+                        <Link
+                          to="cases"
+                          className={css.list_item}
+                          smooth={true}
+                          duration={500}
+                          onClick={closeModal}
+                        >
+                          <div className={css.list_item_text}>Cases</div>
+                          <Arrow className={css.arrow} width={16} />
+                        </Link>
+                      </li>
+                      <li>
+                        <Link
+                          to="faq"
+                          className={css.list_item}
+                          smooth={true}
+                          duration={500}
+                          onClick={closeModal}
+                        >
+                          <div className={css.list_item_text}>FAQ</div>
+                          <Arrow className={css.arrow} width={16} />
+                        </Link>
+                      </li>
+                      <li>
+                        <Link
+                          to="contacts"
+                          className={css.list_item}
+                          smooth={true}
+                          duration={500}
+                          onClick={closeModal}
+                        >
+                          <div className={css.list_item_text}>Contact Us</div>
+                          <Arrow className={css.arrow} width={16} />
+                        </Link>
+                      </li>
+                    </ul>
+                  </div>
                 </div>
               </div>
             </div>

@@ -1,5 +1,6 @@
 @media only screen and (max-width: 480px) {
   .message_form_container {
+    width: 100%;
     display: flex;
     justify-content: center;
     background-color: rgba(234, 237, 241, 1);
@@ -99,10 +100,12 @@
 
 @media only screen and (min-width: 481px) and (max-width: 768px) {
   .message_form_container {
+    width: 100%; /* Используйте 100% ширины для ширин менее 480px */
+    max-width: 440px; /* Но максимальная ширина не превышает 480px */
+    margin: 0 auto; /* Центрирует контейнер по горизонтали */
     display: flex;
     justify-content: center;
     background-color: rgba(234, 237, 241, 1);
-    width: 480px;
   }
 
   .message_form {
