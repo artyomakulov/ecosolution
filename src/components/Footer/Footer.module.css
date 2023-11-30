@@ -158,8 +158,8 @@
     gap: 8px;
     stroke: var(--primary);
     transition: stroke 0.3s;
-    left: 50%;
-    top: 34%;
+    left: calc(50% + 1px);
+    top: 37%;
     position: absolute;
   }
 
@@ -174,7 +174,11 @@
     display: flex;
     justify-content: space-between;
     margin: 16px 0;
-    gap: 16px;
+  }
+  .adress_flex {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
   }
 }
 
