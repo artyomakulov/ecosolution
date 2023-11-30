@@ -10,8 +10,8 @@ import about2 from "../../utils/images/about2.jpg";
 
 const About = () => {
   return (
-    <div className={css.section}>
-      <div className={css.container} id="about">
+    <div className={css.section} id="about">
+      <div className={css.container}>
         <div className={css.adress}>
           <p className={css.adress_text}>
             79005, Ukraine, Lvivstreet. Shota Rustaveli, 7

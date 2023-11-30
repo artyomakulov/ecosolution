@@ -30,8 +30,10 @@ const Footer = () => {
 
       <div className={css.adress}>
         <p>79005, Ukraine, Lvivstreet. Shota Rustaveli, 7</p>
-        <p>office@ecosolution.com</p>
-        <p>ecosolution © 2023</p>
+        <div className={css.adress_flex}>
+          <p>office@ecosolution.com</p>
+          <p>ecosolution © 2023</p>
+        </div>
       </div>
     </footer>
   );

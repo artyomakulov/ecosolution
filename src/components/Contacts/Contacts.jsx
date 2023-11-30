@@ -8,8 +8,8 @@ import Form from "./Form/Form";
 
 const Contacts = () => {
   return (
-    <div className={css.section}>
-      <div className={css.container} id="contacts">
+    <div className={css.section} id="contacts">
+      <div className={css.container} >
         <h2 className={css.title}>Contact us</h2>
         <div className={css.container768px}>
           <div className={css.contacts}>
@@ -48,7 +48,7 @@ const Contacts = () => {
               </div>
             </div>
           </div>
-          <Form/>
+          <Form />
         </div>
       </div>
     </div>

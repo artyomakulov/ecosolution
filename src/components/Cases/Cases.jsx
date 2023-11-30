@@ -25,8 +25,8 @@ const Cases = () => {
   const nextCard = items[(indexActiveCard + 1) % totalCards];
 
   return (
-    <div className={css.section}>
-      <div className={css.container} id="cases">
+    <div className={css.section} id="cases">
+      <div className={css.container}>
         <div className={css.slider_container}>
           <h2 className={css.title}>Successful cases of our company</h2>
           <div className={css.slider}>

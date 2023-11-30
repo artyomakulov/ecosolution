@@ -502,7 +502,6 @@
     right: 0;
     left: 0;
     width: 100%;
-    max-width: 768px;
     height: 100%;
     z-index: 150;
     background-color: rgba(23, 61, 51, 0.25);
@@ -512,16 +511,16 @@
 
   .modalContentContainer {
     position: fixed;
-    top: 0;
-    right: 0;
-    width: 320px;
+    top: -20px;
+    left: calc(50% + 240px);
+    width: 365px;
     margin: 36px 30px 0 20px;
     border-radius: 25px;
     background-color: rgba(23, 61, 51, 0.75);
   }
 
   .modalContent {
-    height: 700px;
+    height: 850px;
   }
   .btnClose {
     display: flex;

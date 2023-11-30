@@ -208,7 +208,7 @@
     text-align: left;
     text-transform: uppercase;
     color: var(--primary);
-    left: 49%;
+    left: calc(50% - 15px);
     margin-left: 24px;
     width: 370px;
   }
@@ -255,9 +255,117 @@
     flex-direction: column;
     align-items: center;
     position: absolute;
-    left: 49%;
+    left: calc(50% - 15px);
     bottom: 20px;
     margin-left: 24px;
+  }
+
+  .dot {
+    width: 14px;
+    height: 14px;
+    background-color: var(--primary);
+    border-radius: 50%;
+    transition: color 0.3s;
+  }
+  .contactBtn {
+    display: flex;
+    align-items: center;
+    padding: 10px 12px 10px 16px;
+    margin-top: 12px;
+    background-color: var(--second);
+    border: 0;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: color 0.3s;
+  }
+  .contactBtn:hover {
+    background-color: var(--primary);
+  }
+  .contactBtn_text {
+    margin-right: 12px;
+    font-family: "Fira Sans", sans-serif;
+    text-align: center;
+    font-size: 16px;
+    transition: color 0.3s;
+  }
+  .contactBtn:hover .contactBtn_text {
+    color: var(--second);
+  }
+  .contactBtn:hover .dot {
+    background-color: var(--second);
+  }
+}
+
+@media only screen and (min-width: 1281px) {
+  .section {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin-top: 120px;
+  }
+  .container {
+    width: 1240px;
+    margin: 0 30px;
+  }
+  .ul_container {
+    width: 596px;
+  }
+
+  .title {
+    position: absolute;
+    font-family: "Oswald", sans-serif;
+    font-size: 48px;
+    text-align: left;
+    text-transform: uppercase;
+    color: var(--primary);
+    left: calc(50% + 185px);
+    width: 370px;
+  }
+  .question_form {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px 0;
+    border-top: 1px solid var(--second);
+  }
+  .question {
+    font-family: "Fira Sans", sans-serif;
+    text-align: left;
+    font-size: 24px;
+    line-height: 21px;
+    color: var(--primary);
+  }
+  .answer {
+    font-family: "Fira Sans", sans-serif;
+    text-align: left;
+    font-size: 14px;
+    line-height: 17px;
+    color: var(--primary);
+    padding: 0 0 16px 24px;
+  }
+
+  .openBtn {
+    padding: 0;
+    margin: 0 8px 0 0;
+    border: 0;
+    background-color: rgba(243, 245, 250, 1);
+    display: flex;
+    align-items: center;
+  }
+  .after_text {
+    font-family: "Fira Sans", sans-serif;
+    text-align: center;
+    font-size: 18px;
+    color: var(--primary);
+    margin-top: 20px;
+  }
+  .contact_link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    left: calc(50% + 185px);
+    bottom: 20px;
   }
 
   .dot {
