@@ -23,10 +23,10 @@ const Footer = () => {
           </div>
         </div>
         <div className={css.contact_item}>
-          <a href="https://www.facebook.com/" target="_blank" rel="noreferrer">
+          <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">
             <Facebook className={css.contact_img} />
           </a>
-          <a href="https://www.instagram.com/" target="_blank" rel="noreferrer">
+          <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
             <Insta className={css.contact_img} />
           </a>
         </div>

@@ -16,25 +16,31 @@ const Contacts = () => {
             <div className={css.contact_block}>
               <p className={css.contact_type}>Phone:</p>
               <div className={css.contact_item}>
-                <Phone className={css.contact_img} width={24} />
+                <a href="tel:+380981234567">
+                  <Phone className={css.contact_img} width={24} />
+                </a>
                 <p className={css.contact_text}>38 (098) 12 34 567</p>
               </div>
               <div className={css.contact_item}>
-                <Phone className={css.contact_img} width={24} />
+                <a href="tel:+380981234567">
+                  <Phone className={css.contact_img} width={24} />
+                </a>
                 <p className={css.contact_text}>38 (093) 12 34 567</p>
               </div>
             </div>
             <div className={css.contact_block}>
               <p className={css.contact_type}>Email:</p>
               <div className={css.contact_item}>
-                <Email className={css.contact_img} width={24} />
+                <a href="mailto:office@ecosolution.com">
+                  <Email className={css.contact_img} width={24} />
+                </a>
                 <p className={css.contact_text}>office@ecosolution.com</p>
               </div>
             </div>
             <div className={css.contact_block}>
               <p className={css.contact_type}>Adress:</p>
               <div className={css.contact_item}>
-                <Map className={css.contact_img} width={36} />
+                <Map className={css.contact_img} width={24} />
                 <p className={css.contact_text}>
                   79005, Ukraine, Lvivstreet. Shota Rustaveli, 7
                 </p>
@@ -46,14 +52,14 @@ const Contacts = () => {
                 <a
                   href="https://www.facebook.com/"
                   target="_blank"
-                  rel="noreferrer"
+                  rel="noreferrer noopener"
                 >
                   <Facebook className={css.contact_img} width={24} />
                 </a>
                 <a
                   href="https://www.instagram.com/"
                   target="_blank"
-                  rel="noreferrer"
+                  rel="noopener noreferrer"
                 >
                   <Insta className={css.contact_img} width={24} />
                 </a>

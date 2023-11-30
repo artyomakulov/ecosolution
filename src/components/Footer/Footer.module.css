@@ -41,14 +41,10 @@ footer {
   transition: stroke 0.3s;
   cursor: pointer;
 }
-
-.contact_img {
-  transition: stroke 0.3s;
-}
-
-.contact_img:hover {
+.contact_item:hover .contact_img {
   stroke: var(--second);
 }
+
 .adress {
   font-family: "Fira Sans", sans-serif;
   font-size: 16px;

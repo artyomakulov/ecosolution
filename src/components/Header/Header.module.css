@@ -101,6 +101,8 @@ header {
   justify-content: center;
   align-items: center;
   margin-bottom: 8px;
+  cursor: pointer;
+  transition: color 0.3s;
 }
 
 .list_item_text:hover {

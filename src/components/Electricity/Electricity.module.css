@@ -1,46 +1,44 @@
- 
-  .container {
-    margin-right: 20px;
-    margin-left: 20px;
-    margin-bottom: 36px;
-  }
-  .title {
-    font-family: "Oswald", sans-serif;
-    font-size: 28px;
-    text-transform: uppercase;
-    text-align: center;
-    color: var(--primary);
-  }
+.container {
+  margin-right: 20px;
+  margin-left: 20px;
+  margin-bottom: 36px;
+}
+.title {
+  font-family: "Oswald", sans-serif;
+  font-size: 28px;
+  text-transform: uppercase;
+  text-align: center;
+  color: var(--primary);
+}
 
-  .text_container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    margin-top: 96px;
-  }
-  .text_container::after {
-    content: "";
-    display: block;
-    width: 1px;
-    height: 48px;
-    background-color: var(--second);
-    position: absolute;
-    top: -72px;
-  }
-  .text {
-    color: var(--second);
-    font-family: "Oswald", sans-serif;
-    font-size: 48px;
-    font-weight: 700;
-    margin-right: 8px;
-  }
-  .text_second {
-    font-family: "Oswald", sans-serif;
-    font-size: 24px;
-    color: var(--primary);
-  }
-
+.text_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin-top: 96px;
+}
+.text_container::after {
+  content: "";
+  display: block;
+  width: 1px;
+  height: 48px;
+  background-color: var(--second);
+  position: absolute;
+  top: -72px;
+}
+.text {
+  color: var(--second);
+  font-family: "Oswald", sans-serif;
+  font-size: 48px;
+  font-weight: 700;
+  margin-right: 8px;
+}
+.text_second {
+  font-family: "Oswald", sans-serif;
+  font-size: 24px;
+  color: var(--primary);
+}
 
 @media only screen and (min-width: 481px) and (max-width: 768px) {
   .section {
@@ -130,6 +128,7 @@
     color: var(--second);
     font-size: 164px;
     font-weight: 700;
+    margin-right: 24px;
   }
   .text_second {
     font-size: 48px;

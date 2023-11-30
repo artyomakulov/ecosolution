@@ -129,8 +129,20 @@ const Header = () => {
                       </li>
                     </ul>
                     <div className={css.contact_item}>
-                      <Facebook className={css.contact_img} width={24} />
-                      <Insta className={css.contact_img} width={24} />
+                      <a
+                        href="https://www.facebook.com/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <Facebook className={css.contact_img} width={24} />
+                      </a>
+                      <a
+                        href="https://www.instagram.com/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <Insta className={css.contact_img} width={24} />
+                      </a>
                     </div>
                   </div>
                 </div>
