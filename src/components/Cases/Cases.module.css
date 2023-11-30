@@ -1,51 +1,49 @@
-@media only screen and (max-width: 480px) {
-  .container {
-    margin-right: 20px;
-    margin-left: 20px;
-    margin-bottom: 36px;
-  }
-  .title {
-    width: 264px;
-    font-family: "Oswald", sans-serif;
-    font-size: 28px;
-    text-transform: uppercase;
-    text-align: start;
-    color: var(--primary);
-    margin-bottom: 24px;
-  }
-  .slider {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
-  }
+.container {
+  margin-right: 20px;
+  margin-left: 20px;
+  margin-bottom: 36px;
+}
+.title {
+  width: 264px;
+  font-family: "Oswald", sans-serif;
+  font-size: 28px;
+  text-transform: uppercase;
+  text-align: start;
+  color: var(--primary);
+  margin-bottom: 24px;
+}
+.slider {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
 
-  .btn {
-    border: 1px solid var(--primary);
-    border-radius: 50px;
-    padding: 13px 14px;
-    margin: 0 6px;
-    background-color: var(--background);
-    stroke: var(--primary);
-    transition: stroke 0.3s;
-  }
-  .btn:hover {
-    stroke: var(--second);
-    border: 1px solid var(--second);
-  }
+.btn {
+  border: 1px solid var(--primary);
+  border-radius: 50px;
+  padding: 13px 14px;
+  margin: 0 6px;
+  background-color: var(--background);
+  stroke: var(--primary);
+  transition: stroke 0.3s;
+}
+.btn:hover {
+  stroke: var(--second);
+  border: 1px solid var(--second);
+}
 
-  .num {
-    font-family: "Fira Sans", sans-serif;
-    font-size: 28px;
-    color: var(--primary);
-  }
-  .num2 {
-    font-family: "Fira Sans", sans-serif;
-    font-size: 28px;
-    color: rgba(23, 61, 51, 0.25);
-  }
-  .card {
-    margin-top: 26px;
-  }
+.num {
+  font-family: "Fira Sans", sans-serif;
+  font-size: 28px;
+  color: var(--primary);
+}
+.num2 {
+  font-family: "Fira Sans", sans-serif;
+  font-size: 28px;
+  color: rgba(23, 61, 51, 0.25);
+}
+.card {
+  margin-top: 26px;
 }
 
 @media only screen and (min-width: 481px) and (max-width: 768px) {
@@ -68,39 +66,6 @@
     color: var(--primary);
     margin-bottom: 24px;
   }
-  .slider {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
-  }
-
-  .btn {
-    border: 1px solid var(--primary);
-    border-radius: 50px;
-    padding: 13px 14px;
-    margin: 0 6px;
-    background-color: var(--background);
-    stroke: var(--primary);
-    transition: stroke 0.3s;
-  }
-  .btn:hover {
-    stroke: var(--second);
-    border: 1px solid var(--second);
-  }
-
-  .num {
-    font-family: "Fira Sans", sans-serif;
-    font-size: 28px;
-    color: var(--primary);
-  }
-  .num2 {
-    font-family: "Fira Sans", sans-serif;
-    font-size: 28px;
-    color: rgba(23, 61, 51, 0.25);
-  }
-  .card {
-    margin-top: 26px;
-  }
 }
 
 @media only screen and (min-width: 769px) and (max-width: 1280px) {
@@ -121,44 +86,13 @@
   }
   .title {
     width: 264px;
-    font-family: "Oswald", sans-serif;
-    font-size: 28px;
-    text-transform: uppercase;
-    text-align: start;
-    color: var(--primary);
+    font-size: 36px;
+    margin-bottom: 0;
   }
   .slider {
     width: 342px;
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
     padding-left: 9px;
     border-left: 1px solid var(--second);
-  }
-
-  .btn {
-    border: 1px solid var(--primary);
-    border-radius: 50px;
-    padding: 13px 14px;
-    margin: 0 6px;
-    background-color: var(--background);
-    stroke: var(--primary);
-    transition: stroke 0.3s;
-  }
-  .btn:hover {
-    stroke: var(--second);
-    border: 1px solid var(--second);
-  }
-
-  .num {
-    font-family: "Fira Sans", sans-serif;
-    font-size: 28px;
-    color: var(--primary);
-  }
-  .num2 {
-    font-family: "Fira Sans", sans-serif;
-    font-size: 28px;
-    color: rgba(23, 61, 51, 0.25);
   }
   .card {
     margin-top: 38px;
@@ -176,11 +110,7 @@
     margin-right: 30px;
     margin-left: 30px;
   }
-  .slider_container {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
-  }
+
   .title {
     width: 400px;
     font-family: "Oswald", sans-serif;
@@ -188,12 +118,17 @@
     text-transform: uppercase;
     text-align: start;
     color: var(--primary);
+    margin-bottom: 0;
   }
-  .slider {
-    width: 480px;
+
+  .slider_container {
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
+  }
+
+  .slider {
+    width: 480px;
     padding-left: 160px;
     padding-top: 6px;
     padding-bottom: 6px;
@@ -201,28 +136,8 @@
   }
 
   .btn {
-    border: 1px solid var(--primary);
-    border-radius: 50px;
     padding: 22px 24px;
     margin: 0 12px;
-    background-color: var(--background);
-    stroke: var(--primary);
-    transition: stroke 0.3s;
-  }
-  .btn:hover {
-    stroke: var(--second);
-    border: 1px solid var(--second);
-  }
-
-  .num {
-    font-family: "Fira Sans", sans-serif;
-    font-size: 28px;
-    color: var(--primary);
-  }
-  .num2 {
-    font-family: "Fira Sans", sans-serif;
-    font-size: 28px;
-    color: rgba(23, 61, 51, 0.25);
   }
   .card {
     margin-top: 120px;
