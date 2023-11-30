@@ -31,7 +31,10 @@ const Contacts = () => {
             <div className={css.contact_block}>
               <p className={css.contact_type}>Email:</p>
               <div className={css.contact_item}>
-                <a href="mailto:office@ecosolution.com">
+                <a
+                  href="mailto:office@ecosolution.com"
+                  style={{ display: "flex" }}
+                >
                   <Email className={css.contact_img} width={24} />
                 </a>
                 <p className={css.contact_text}>office@ecosolution.com</p>
@@ -40,7 +43,11 @@ const Contacts = () => {
             <div className={css.contact_block}>
               <p className={css.contact_type}>Adress:</p>
               <div className={css.contact_item}>
-                <Map className={css.contact_img} width={24} />
+                <Map
+                  className={css.contact_img}
+                  width={24}
+                  style={{ display: "flex" }}
+                />
                 <p className={css.contact_text}>
                   79005, Ukraine, Lvivstreet. Shota Rustaveli, 7
                 </p>
@@ -54,14 +61,14 @@ const Contacts = () => {
                   target="_blank"
                   rel="noreferrer noopener"
                 >
-                  <Facebook className={css.contact_img} width={24} />
+                  <Facebook className={css.contact_social_img} width={24} />
                 </a>
                 <a
                   href="https://www.instagram.com/"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <Insta className={css.contact_img} width={24} />
+                  <Insta className={css.contact_social_img} width={24} />
                 </a>
               </div>
             </div>

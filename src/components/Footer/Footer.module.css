@@ -14,6 +14,7 @@ footer {
 .logo {
   max-width: 100%;
   height: auto;
+  cursor: pointer;
 }
 .logo:hover > svg > g > path {
   fill: var(--second);
@@ -41,7 +42,10 @@ footer {
   transition: stroke 0.3s;
   cursor: pointer;
 }
-.contact_item:hover .contact_img {
+.contact_img {
+  transition: stroke 0.3s;
+}
+.contact_img:hover {
   stroke: var(--second);
 }
 

@@ -57,7 +57,6 @@ const About = () => {
               </p>
             </div>
           </div>
-
           <div className={css.image_values}>
             <img src={about2} alt="Description2" />
           </div>

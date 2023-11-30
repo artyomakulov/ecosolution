@@ -17,6 +17,7 @@ header {
 .logo {
   max-width: 100%;
   height: auto;
+  cursor: pointer;
 }
 
 .logo:hover > svg > g > path {
@@ -78,6 +79,12 @@ header {
   stroke: rgba(243, 245, 250, 1);
   padding: 0 0 8px 0;
   margin: 24px 0 0 0;
+  cursor: pointer;
+}
+
+.btnClose:hover * {
+  stroke: var(--second);
+  color: var(--second);
 }
 
 .cont {

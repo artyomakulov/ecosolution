@@ -45,7 +45,7 @@ const faqData = [
 ];
 
 const FAQ = () => {
-  const [openQuestion, setOpenQuestion] = useState(null);
+  const [openQuestion, setOpenQuestion] = useState(1);
 
   const toggleAnswer = (questionId) => {
     setOpenQuestion(openQuestion === questionId ? null : questionId);

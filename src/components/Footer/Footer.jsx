@@ -13,8 +13,10 @@ const Footer = () => {
     <footer>
       <div>
         <div className={css.container}>
-          <div className={css.logo}>
-            <Logo src={logo} alt="logo" />
+          <div>
+            <a href="/" className={css.logo}>
+              <Logo src={logo} alt="logo" />
+            </a>
           </div>
           <div>
             <Link to="main" smooth={true} duration={500}>
@@ -23,10 +25,18 @@ const Footer = () => {
           </div>
         </div>
         <div className={css.contact_item}>
-          <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">
+          <a
+            href="https://www.facebook.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <Facebook className={css.contact_img} />
           </a>
-          <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
+          <a
+            href="https://www.instagram.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <Insta className={css.contact_img} />
           </a>
         </div>

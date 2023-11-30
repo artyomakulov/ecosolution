@@ -29,16 +29,28 @@
   align-items: center;
   justify-content: flex-start;
   margin-bottom: 12px;
-  transition: color 0.3s;
+  transition: stroke 0.3s;
+  gap: 8px;
+  stroke: var(--primary);
+}
+
+.contact_item:hover .contact_img {
+  stroke: var(--second);
 }
 
 .contact_img {
-  margin-right: 8px;
+  transition: stroke 0.3s;
+}
+
+.contact_text {
+  color: var(--primary);
+}
+.contact_social_img {
   stroke: var(--primary);
   transition: stroke 0.3s;
-  cursor: pointer;
 }
-.contact_img:hover {
+
+.contact_social_img:hover {
   stroke: var(--second);
 }
 
@@ -129,5 +141,9 @@
 
   .contact_text {
     font-size: 24px;
+  }
+  .contact_block:last-child .contact_item:nth-child(1) .contact_img,
+  .contact_block:last-child .contact_item:nth-child(2) .contact_img {
+    margin: 0;
   }
 }

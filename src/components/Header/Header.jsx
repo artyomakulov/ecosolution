@@ -24,8 +24,10 @@ const Header = () => {
   return (
     <header>
       <div className={css.container}>
-        <div className={css.logo}>
-          <Logo src={logo} alt="logo" />
+        <div>
+          <a href="/" className={css.logo}>
+            <Logo src={logo} alt="logo" />
+          </a>
         </div>
         <div className={css.btn_block}>
           <div>
