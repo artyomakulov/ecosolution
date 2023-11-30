@@ -16,8 +16,10 @@ const About = () => {
           <p className={css.adress_text}>
             79005, Ukraine, Lvivstreet. Shota Rustaveli, 7
           </p>
-          <p>office@ecosolution.com</p>
-          <p className={css.adress_hidden}>ecosolution © 2023</p>
+          <div className={css.adress_flex}>
+            <p>office@ecosolution.com</p>
+            <p className={css.adress_hidden}>ecosolution © 2023</p>
+          </div>
         </div>
         <div className={css.image}>
           <img src={mainphoto} alt="green electricity" />
@@ -37,7 +39,7 @@ const About = () => {
           <div className={css.grid_container}>
             <div className={css.item}>
               <div className={css.item_header}>
-                <Openness />
+                <Openness className={css.svg_item} />
                 <h5 className={css.item_title}>Opennes</h5>
               </div>
               <p className={css.item_text}>
@@ -46,7 +48,7 @@ const About = () => {
             </div>
             <div className={css.item}>
               <div className={css.item_header}>
-                <Responsibility />
+                <Responsibility className={css.svg_item} />
                 <h5 className={css.item_title}>Responsibility</h5>
               </div>
               <p className={css.item_text}>
@@ -57,15 +59,15 @@ const About = () => {
           </div>
 
           <div className={css.image_values}>
-            <img src={about2} alt="Description2" width={342} />
+            <img src={about2} alt="Description2" />
           </div>
           <div className={css.image_values}>
-            <img src={about1} alt="Description1" width={342} />
+            <img src={about1} alt="Description1" />
           </div>
           <div className={css.grid_container}>
             <div className={css.item}>
               <div className={css.item_header}>
-                <Innovations />
+                <Innovations className={css.svg_item} />
                 <h5 className={css.item_title}>Innovation</h5>
               </div>
               <p className={css.item_text}>
@@ -74,7 +76,7 @@ const About = () => {
             </div>
             <div className={css.item}>
               <div className={css.item_header}>
-                <Quality />
+                <Quality className={css.svg_item} />
                 <h5 className={css.item_title}>Quality</h5>
               </div>
               <p className={css.item_text}>

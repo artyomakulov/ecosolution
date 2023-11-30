@@ -220,7 +220,7 @@
   }
   .text_block {
     margin-top: 244px;
-    margin-right: 96px;
+    margin-right: 116px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -231,6 +231,7 @@
     font-size: 16px;
     text-align: justify;
     line-height: 19px;
+    letter-spacing: -1px;
     color: var(--primary);
   }
   .button {

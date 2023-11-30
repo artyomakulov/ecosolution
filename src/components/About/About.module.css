@@ -216,7 +216,9 @@
     margin-bottom: 100px;
     max-width: 100%;
   }
-
+  .image_values img {
+    width: 342px;
+  }
   .values_block {
     display: flex;
     justify-content: space-between;
@@ -285,5 +287,111 @@
 }
 
 @media only screen and (min-width: 1281px) {
-  
+  .section {
+    display: flex;
+    justify-content: center;
+  }
+  .container {
+    width: 1240px;
+    margin-top: 12px;
+    margin-right: 30px;
+    margin-left: 30px;
+    margin-bottom: 100px;
+  }
+
+  .adress {
+    width: 1240px;
+    font-family: "Fira Sans", sans-serif;
+    line-height: 19px;
+    color: var(--primary);
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .adress_flex {
+    display: flex;
+    justify-content: space-between;
+    gap: 167px;
+  }
+  .image img {
+    width: 100%;
+    margin-top: 36px;
+    margin-bottom: 123px;
+    max-width: 100%;
+  }
+
+  .image_values img {
+    width: 596px;
+  }
+
+  .values_block {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .values_title {
+    width: 280px;
+    font-family: "Oswald", sans-serif;
+    font-size: 36px;
+    text-transform: uppercase;
+    text-align: left;
+    color: var(--primary);
+  }
+  .values_text {
+    width: 342px;
+    font-family: "Fira Sans", sans-serif;
+    text-align: left;
+    line-height: 19px;
+    color: var(--primary);
+    padding-left: 11px;
+    border-left: 1px solid var(--second);
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 339px);
+    gap: 24px;
+    margin-top: 100px;
+  }
+
+  .grid_container {
+    display: flex;
+    gap: 48px;
+    justify-content: space-between;
+  }
+  .item {
+    height: 339px;
+    width: 100%;
+    text-align: justify;
+    background-color: rgba(234, 237, 241, 1);
+  }
+  .item_header {
+    display: flex;
+    justify-content: flex-start;
+    margin: 48px 24px 24px 24px;
+    border-bottom: 1px solid var(--second);
+  }
+
+  .item_title {
+    font-family: "Oswald", sans-serif;
+    font-size: 32px;
+    text-transform: uppercase;
+    color: var(--primary);
+    margin-left: 8px;
+    margin-bottom: 94px;
+  }
+  .item_text {
+    font-family: "Fira Sans", sans-serif;
+    text-align: justify;
+    font-size: 14px;
+    line-height: 17px;
+    padding: 0 24px;
+    color: var(--primary);
+  }
+  .svg_item {
+    width: 24px;
+    height: 24px;
+    margin-top: 5px;
+  }
 }
