@@ -195,7 +195,7 @@
   }
   .container {
     width: 708px;
-    margin-top: 24px;
+    margin-top: 16px;
     margin-right: 30px;
     margin-left: 30px;
     margin-bottom: 100px;
@@ -208,8 +208,6 @@
     color: var(--primary);
     display: flex;
     justify-content: space-between;
-    margin: 16px 0;
-    gap: 16px;
   }
 
   .image img {

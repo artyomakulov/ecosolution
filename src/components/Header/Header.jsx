@@ -27,18 +27,30 @@ const Header = () => {
         <div className={css.logo}>
           <Logo src={logo} alt="logo" />
         </div>
-        <div>
-          <Burger className={css.burger} width={16} onClick={openModal} />
-        </div>
-        <div className={css.contact_us}>
-          <Link to="contacts" smooth={true} duration={500}>
-            <button className={css.contactBtn}>
-              <span className={css.contactBtn_text}>Contact Us</span>
-              <span className={css.dot}>
-                <Down />
-              </span>
-            </button>
-          </Link>
+        <div className={css.btn_block}>
+          <div>
+            <Burger
+              className={css.burger}
+              width={16}
+              onClick={openModal}
+              style={{ display: isModalOpen ? "none" : "block" }}
+            />
+          </div>
+          <div style={{ display: isModalOpen ? "none" : "block" }}>
+            <Link
+              to="contacts"
+              smooth={true}
+              duration={500}
+              className={css.contact_us}
+            >
+              <button className={css.contactBtn}>
+                <span className={css.contactBtn_text}>Get in touch</span>
+                <span className={css.dot}>
+                  <Down />
+                </span>
+              </button>
+            </Link>
+          </div>
         </div>
 
         {isModalOpen && (
