@@ -36,6 +36,7 @@
   margin-right: 8px;
   stroke: var(--primary);
   transition: stroke 0.3s;
+  cursor: pointer;
 }
 .contact_img:hover {
   stroke: var(--second);

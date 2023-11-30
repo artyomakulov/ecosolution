@@ -9,7 +9,7 @@ import Form from "./Form/Form";
 const Contacts = () => {
   return (
     <div className={css.section} id="contacts">
-      <div className={css.container} >
+      <div className={css.container}>
         <h2 className={css.title}>Contact us</h2>
         <div className={css.container768px}>
           <div className={css.contacts}>
@@ -43,8 +43,20 @@ const Contacts = () => {
             <div className={css.contact_block}>
               <p className={css.contact_type}>Social Networks:</p>
               <div className={css.contact_item}>
-                <Facebook className={css.contact_img} width={24} />
-                <Insta className={css.contact_img} width={24} />
+                <a
+                  href="https://www.facebook.com/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <Facebook className={css.contact_img} width={24} />
+                </a>
+                <a
+                  href="https://www.instagram.com/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <Insta className={css.contact_img} width={24} />
+                </a>
               </div>
             </div>
           </div>

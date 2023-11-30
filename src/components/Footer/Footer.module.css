@@ -1,55 +1,70 @@
+.container {
+  margin: 0 20px;
+  padding: 24px 0;
+  border-top: 1px solid var(--second);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer {
+  width: 100%;
+}
+
+.logo {
+  max-width: 100%;
+  height: auto;
+}
+.logo:hover > svg > g > path {
+  fill: var(--second);
+}
+
+.upBtn {
+  padding: 12px;
+  background-color: var(--second);
+  border-radius: 25px;
+  stroke: var(--primary);
+  transition: stroke 0.3s;
+  transition: background-color 0.3s;
+  cursor: pointer;
+}
+.upBtn:hover {
+  stroke: var(--second);
+  background-color: var(--primary);
+}
+
+.contact_item {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  stroke: var(--primary);
+  transition: stroke 0.3s;
+  cursor: pointer;
+}
+
+.contact_img {
+  transition: stroke 0.3s;
+}
+
+.contact_img:hover {
+  stroke: var(--second);
+}
+.adress {
+  font-family: "Fira Sans", sans-serif;
+  font-size: 16px;
+  color: var(--primary);
+  display: flex;
+  margin: 24px 0;
+}
+
 @media only screen and (max-width: 480px) {
-  .container {
-    margin: 0 20px;
-    padding: 24px 0;
-    border-top: 1px solid var(--second);
-
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-
-  footer {
-    width: 100%;
-  }
-
-  .logo {
-    max-width: 100%;
-    height: auto;
-  }
-  .logo:hover > svg > g > path {
-    fill: var(--second);
-  }
-
-  .upBtn {
-    padding: 12px;
-    background-color: var(--second);
-    border-radius: 25px;
-    stroke: var(--primary);
-    transition: stroke 0.3s;
-  }
-  .upBtn:hover {
-    stroke: var(--second);
-    background-color: var(--primary);
-  }
-
-  .contact_item {
-    display: flex;
-    justify-content: center;
-    gap: 8px;
-    stroke: var(--primary);
-    transition: stroke 0.3s;
-  }
-
-  .contact_img:hover {
-    stroke: var(--second);
-  }
   .adress {
-    font-family: "Fira Sans", sans-serif;
-    color: var(--primary);
+    flex-direction: column;
+    gap: 16px;
+  }
+  .adress_flex {
     display: flex;
     flex-direction: column;
-    margin: 24px 0;
     gap: 16px;
   }
 }
@@ -63,52 +78,14 @@
 
   .container {
     width: 440px;
-    margin: 0 20px;
-    padding: 24px 0;
-    border-top: 1px solid var(--second);
-
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-
-  .logo {
-    max-width: 100%;
-    height: auto;
-  }
-  .logo:hover > svg > g > path {
-    fill: var(--second);
-  }
-
-  .upBtn {
-    padding: 12px;
-    background-color: var(--second);
-    border-radius: 25px;
-    stroke: var(--primary);
-    transition: stroke 0.3s;
-  }
-  .upBtn:hover {
-    stroke: var(--second);
-    background-color: var(--primary);
-  }
-
-  .contact_item {
-    display: flex;
-    justify-content: center;
-    gap: 8px;
-    stroke: var(--primary);
-    transition: stroke 0.3s;
-  }
-
-  .contact_img:hover {
-    stroke: var(--second);
   }
   .adress {
-    font-family: "Fira Sans", sans-serif;
-    color: var(--primary);
+    flex-direction: column;
+    gap: 16px;
+  }
+  .adress_flex {
     display: flex;
     flex-direction: column;
-    margin: 24px 0;
     gap: 16px;
   }
 }
@@ -125,11 +102,6 @@
     width: 708px;
     margin: 0 30px;
     padding: 40px 0 0 0;
-    border-top: 1px solid var(--second);
-
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
   }
 
   .logo {
@@ -140,38 +112,14 @@
     fill: var(--second);
   }
 
-  .upBtn {
-    padding: 12px;
-    background-color: var(--second);
-    border-radius: 25px;
-    stroke: var(--primary);
-    transition: stroke 0.3s;
-  }
-  .upBtn:hover {
-    stroke: var(--second);
-    background-color: var(--primary);
-  }
-
   .contact_item {
-    display: flex;
-    justify-content: center;
-    gap: 8px;
-    stroke: var(--primary);
-    transition: stroke 0.3s;
     left: calc(50% + 1px);
     top: 37%;
     position: absolute;
   }
 
-  .contact_img:hover {
-    stroke: var(--second);
-  }
   .adress {
     width: 708px;
-    font-family: "Fira Sans", sans-serif;
-    line-height: 19px;
-    color: var(--primary);
-    display: flex;
     justify-content: space-between;
     margin: 16px 0;
   }
@@ -195,56 +143,19 @@
     margin: 0 30px;
     padding: 40px 0 0 0;
     border-top: 1px solid var(--second);
-
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     position: relative;
   }
 
-  .logo {
-    max-width: 100%;
-    height: auto;
-  }
-  .logo:hover > svg > g > path {
-    fill: var(--second);
-  }
-
-  .upBtn {
-    padding: 12px;
-    background-color: var(--second);
-    border-radius: 25px;
-    stroke: var(--primary);
-    transition: stroke 0.3s;
-  }
-  .upBtn:hover {
-    stroke: var(--second);
-    background-color: var(--primary);
-  }
-
   .contact_item {
-    display: flex;
-    justify-content: center;
-    gap: 8px;
-    stroke: var(--primary);
-    transition: stroke 0.3s;
     left: calc(50% + 135px);
     top: 37%;
     position: absolute;
   }
 
-  .contact_img:hover {
-    stroke: var(--second);
-  }
   .adress {
     width: 1240px;
-    font-family: "Fira Sans", sans-serif;
-    line-height: 19px;
-    color: var(--primary);
-    display: flex;
     justify-content: space-between;
     margin: 16px 0;
-    gap: 16px;
   }
   .adress_flex {
     display: flex;
