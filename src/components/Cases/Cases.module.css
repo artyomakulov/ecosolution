@@ -107,12 +107,18 @@
   .section {
     display: flex;
     justify-content: center;
+    margin: 100px 0;
   }
   .container {
     width: 708px;
     margin-right: 30px;
     margin-left: 30px;
-    margin-bottom: 36px;
+  }
+  .slider_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+ 
   }
   .title {
     width: 264px;
@@ -121,12 +127,14 @@
     text-transform: uppercase;
     text-align: start;
     color: var(--primary);
-    margin-bottom: 24px;
   }
   .slider {
+    width: 342px;
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
+    padding-left: 9px;
+    border-left: 1px solid var(--second);
   }
 
   .btn {
@@ -154,6 +162,6 @@
     color: rgba(23, 61, 51, 0.25);
   }
   .card {
-    margin-top: 26px;
+    margin-top: 38px;
   }
 }

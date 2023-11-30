@@ -50,7 +50,7 @@ const FAQ = () => {
     <div className={css.section}>
       <div className={css.container} id="faq">
         <h2 className={css.title}>Frequently Asked Questions</h2>
-        <div>
+        <div className={css.ul_container}>
           <ul>
             {faqData.map((item) => (
               <li key={item.id}>
