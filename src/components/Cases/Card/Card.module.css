@@ -37,6 +37,9 @@
   background-color: var(--second);
   stroke: var(--primary);
   transition: stroke 0.3s;
+  transition: background-color 0.3s;
+
+  cursor: pointer;
 }
 
 .btn:hover {

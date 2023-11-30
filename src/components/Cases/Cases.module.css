@@ -26,6 +26,9 @@
   background-color: var(--background);
   stroke: var(--primary);
   transition: stroke 0.3s;
+  cursor: pointer;
+  transition: border 0.3s;
+
 }
 .btn:hover {
   stroke: var(--second);
@@ -129,7 +132,7 @@
 
   .slider {
     width: 480px;
-    padding-left: 160px;
+    padding-left: 135px;
     padding-top: 6px;
     padding-bottom: 6px;
     border-left: 1px solid var(--second);
