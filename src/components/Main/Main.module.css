@@ -1,60 +1,60 @@
-@media only screen and (max-width: 480px) {
-  .container {
-    margin-right: 20px;
-    margin-left: 20px;
-    border-bottom: 1px solid var(--second);
-  }
+.container {
+  margin-right: 20px;
+  margin-left: 20px;
+  border-bottom: 1px solid var(--second);
+}
 
-  .title {
-    font-family: "Oswald", sans-serif;
-    font-size: 36px;
-    text-transform: uppercase;
-    text-align: left;
-    margin-top: 226px;
-    margin-bottom: 24px;
-    color: var(--primary);
-  }
+.title {
+  font-family: "Oswald", sans-serif;
+  font-size: 36px;
+  text-transform: uppercase;
+  text-align: left;
+  margin-top: 226px;
+  margin-bottom: 24px;
+  color: var(--primary);
+}
 
-  .text {
-    font-family: "Fira Sans", sans-serif;
-    font-size: 16px;
-    text-align: left;
-    line-height: 19px;
-    color: var(--primary);
-  }
-  .button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 1px solid var(--second);
-    border-radius: 25px;
-    margin: 24px auto;
-    background-color: var(--background);
-    transition: color 0.3s;
-  }
-  .button:hover {
-    background-color: var(--primary);
-    color: var(--second);
-  }
+.text {
+  font-family: "Fira Sans", sans-serif;
+  font-size: 16px;
+  text-align: left;
+  line-height: 19px;
+  color: var(--primary);
+}
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid var(--second);
+  border-radius: 25px;
+  margin: 24px auto;
+  background-color: var(--background);
+  transition: color 0.3s;
+  transition: background-color 0.3s;
+  cursor: pointer;
+}
+.button:hover {
+  background-color: var(--primary);
+  color: var(--second);
+}
 
-  .button_text {
-    font-family: "Fira Sans", sans-serif;
-    font-size: 16px;
-    padding: 8px 10px 8px 14px;
-    color: var(--primary);
-    transition: color 0.3s;
-  }
-  .button:hover .button_text {
-    color: var(--second);
-  }
-  .arrow {
-    padding: 8px;
-    border-radius: 25px;
-    background-color: var(--second);
-    stroke: var(--primary);
-    margin: 3px 3px 3px 0;
-    transition: stroke 0.3s;
-  }
+.button_text {
+  font-family: "Fira Sans", sans-serif;
+  font-size: 16px;
+  padding: 8px 10px 8px 14px;
+  color: var(--primary);
+  transition: color 0.3s;
+}
+.button:hover .button_text {
+  color: var(--second);
+}
+.arrow {
+  padding: 8px;
+  border-radius: 25px;
+  background-color: var(--second);
+  stroke: var(--primary);
+  margin: 3px 3px 3px 0;
+  transition: stroke 0.3s;
 }
 
 @media only screen and (min-width: 481px) and (max-width: 768px) {
@@ -64,61 +64,10 @@
   }
   .container {
     width: 440px;
-    margin-right: 20px;
-
-    margin-left: 20px;
-    border-bottom: 1px solid var(--second);
-  }
-
-  .title {
-    font-family: "Oswald", sans-serif;
-    font-size: 36px;
-    text-transform: uppercase;
-    text-align: left;
-    margin-top: 226px;
-    margin-bottom: 24px;
-    color: var(--primary);
   }
 
   .text {
-    font-family: "Fira Sans", sans-serif;
-    font-size: 16px;
     text-align: justify;
-    line-height: 19px;
-    color: var(--primary);
-  }
-  .button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 1px solid var(--second);
-    border-radius: 25px;
-    margin: 24px auto;
-    background-color: var(--background);
-    transition: color 0.3s;
-  }
-  .button:hover {
-    background-color: var(--primary);
-    color: var(--second);
-  }
-
-  .button_text {
-    font-family: "Fira Sans", sans-serif;
-    font-size: 16px;
-    padding: 8px 10px 8px 14px;
-    color: var(--primary);
-    transition: color 0.3s;
-  }
-  .button:hover .button_text {
-    color: var(--second);
-  }
-  .arrow {
-    padding: 8px;
-    border-radius: 25px;
-    background-color: var(--second);
-    stroke: var(--primary);
-    margin: 3px 3px 3px 0;
-    transition: stroke 0.3s;
   }
 }
 
@@ -131,19 +80,12 @@
     display: flex;
     justify-content: space-between;
     width: 708px;
-
-    border-bottom: 1px solid var(--second);
   }
 
   .title {
     width: 300px;
-    font-family: "Oswald", sans-serif;
     font-size: 48px;
-    text-transform: uppercase;
-    text-align: left;
     margin-top: 244px;
-    margin-bottom: 24px;
-    color: var(--primary);
   }
   .text_block {
     margin-top: 244px;
@@ -154,44 +96,11 @@
   }
   .text {
     width: 342px;
-    font-family: "Fira Sans", sans-serif;
-    font-size: 16px;
     text-align: justify;
-    line-height: 19px;
-    color: var(--primary);
   }
   .button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 1px solid var(--second);
-    border-radius: 25px;
     margin-bottom: 26px;
-    background-color: var(--background);
-    transition: color 0.3s;
-  }
-  .button:hover {
-    background-color: var(--primary);
-    color: var(--second);
-  }
-
-  .button_text {
-    font-family: "Fira Sans", sans-serif;
-    font-size: 16px;
-    padding: 8px 10px 8px 14px;
-    color: var(--primary);
-    transition: color 0.3s;
-  }
-  .button:hover .button_text {
-    color: var(--second);
-  }
-  .arrow {
-    padding: 8px;
-    border-radius: 25px;
-    background-color: var(--second);
-    stroke: var(--primary);
-    margin: 3px 3px 3px 0;
-    transition: stroke 0.3s;
+    margin-left: 0;
   }
 }
 
@@ -204,19 +113,12 @@
     display: flex;
     justify-content: space-between;
     width: 1240px;
-
-    border-bottom: 1px solid var(--second);
   }
 
   .title {
     width: 485px;
-    font-family: "Oswald", sans-serif;
     font-size: 64px;
-    text-transform: uppercase;
-    text-align: left;
     margin-top: 244px;
-    margin-bottom: 24px;
-    color: var(--primary);
   }
   .text_block {
     margin-top: 244px;
@@ -227,44 +129,11 @@
   }
   .text {
     width: 364px;
-    font-family: "Fira Sans", sans-serif;
-    font-size: 16px;
     text-align: justify;
-    line-height: 19px;
     letter-spacing: -1px;
-    color: var(--primary);
   }
   .button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 1px solid var(--second);
-    border-radius: 25px;
     margin-bottom: 28px;
-    background-color: var(--background);
-    transition: color 0.3s;
-  }
-  .button:hover {
-    background-color: var(--primary);
-    color: var(--second);
-  }
-
-  .button_text {
-    font-family: "Fira Sans", sans-serif;
-    font-size: 16px;
-    padding: 8px 10px 8px 14px;
-    color: var(--primary);
-    transition: color 0.3s;
-  }
-  .button:hover .button_text {
-    color: var(--second);
-  }
-  .arrow {
-    padding: 8px;
-    border-radius: 25px;
-    background-color: var(--second);
-    stroke: var(--primary);
-    margin: 3px 3px 3px 0;
-    transition: stroke 0.3s;
+    margin-left: 0;
   }
 }
