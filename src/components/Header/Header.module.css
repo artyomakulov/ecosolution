@@ -145,16 +145,9 @@ header {
     min-width: 440px;
   }
 
-  .overlay {
-    max-width: 480px;
-  }
-
   .modalContentContainer {
-    position: fixed;
-    top: 0;
-    right: 0;
+    position: relative;
     width: 320px;
-    margin: 36px 20px 0 20px;
     border-radius: 25px;
     background-color: rgba(23, 61, 51, 0.75);
   }
@@ -178,14 +171,10 @@ header {
     z-index: 100;
   }
 
-  .overlay {
-    max-width: 768px;
-  }
-
   .modalContentContainer {
-    position: fixed;
-    top: 0;
-    right: 0;
+    position: relative;
+    top: -20px;
+    left: calc(50% + 15px);
     width: 320px;
     margin: 36px 30px 0 20px;
     border-radius: 25px;
@@ -272,7 +261,7 @@ header {
   }
 
   .modalContentContainer {
-    position: fixed;
+    position: relative;
     top: -20px;
     left: calc(50% + 240px);
     width: 365px;
