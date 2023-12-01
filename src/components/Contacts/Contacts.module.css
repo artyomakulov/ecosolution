@@ -12,9 +12,7 @@
 .contacts {
   margin: 24px 0;
 }
-.contact_block {
-  width: 280px;
-}
+
 .contact_type {
   text-align: start;
   font-family: "Fira Sans", sans-serif;
@@ -52,6 +50,12 @@
 
 .contact_social_img:hover {
   stroke: var(--second);
+}
+
+.contact_social_item {
+  display: flex;
+  margin: 20px 0 0 12px;
+  gap: 32px;
 }
 
 .contact_text {
@@ -105,6 +109,7 @@
   .contact_block {
     width: 280px;
   }
+ 
 }
 
 @media only screen and (min-width: 1281px) {
@@ -145,5 +150,14 @@
   .contact_block:last-child .contact_item:nth-child(1) .contact_img,
   .contact_block:last-child .contact_item:nth-child(2) .contact_img {
     margin: 0;
+  }
+
+  .contact_social_item {
+    display: flex;
+    margin: 16px 0 0 0;
+    gap: 8px;
+  }
+  .hidden {
+    display: none;
   }
 }

@@ -49,13 +49,13 @@ const Contacts = () => {
                   style={{ display: "flex" }}
                 />
                 <p className={css.contact_text}>
-                  79005, Ukraine, Lvivstreet. Shota Rustaveli, 7
+                  79005, Ukraine, Lvivstreet. <br className={css.hidden}/> Shota Rustaveli, 7
                 </p>
               </div>
             </div>
             <div className={css.contact_block}>
               <p className={css.contact_type}>Social Networks:</p>
-              <div className={css.contact_item}>
+              <div className={css.contact_social_item}>
                 <a
                   href="https://www.facebook.com/"
                   target="_blank"
