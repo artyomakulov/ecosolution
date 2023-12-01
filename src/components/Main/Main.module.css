@@ -9,7 +9,7 @@
   font-size: 36px;
   text-transform: uppercase;
   text-align: left;
-  margin-top: 226px;
+  margin-top: 222px;
   margin-bottom: 24px;
   color: var(--primary);
 }
@@ -85,10 +85,10 @@
   .title {
     width: 300px;
     font-size: 48px;
-    margin-top: 244px;
+    margin-top: 240px;
   }
   .text_block {
-    margin-top: 244px;
+    margin-top: 243px;
     width: 342px;
     display: flex;
     flex-direction: column;
@@ -118,10 +118,10 @@
   .title {
     width: 485px;
     font-size: 64px;
-    margin-top: 244px;
+    margin-top: 264px;
   }
   .text_block {
-    margin-top: 244px;
+    margin-top: 272x;
     margin-right: 116px;
     display: flex;
     flex-direction: column;
