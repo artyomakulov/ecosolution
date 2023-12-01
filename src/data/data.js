@@ -2,10 +2,10 @@ export const items = [
   {
     id: 1,
     region: "Lviv Region, Radekhiv town",
-    title: "Private Enterprise “ZAKHIDNYI BUH”",
+    title: "Private Enterprise “ZAKHIDNYI BUH",
     description: "Wind Power for auto field irrigation",
     date: "July 2023",
-    image: require("./photos/1.jpg"),
+    img: require("./photos/1.jpg"),
   },
   {
     id: 2,
@@ -13,7 +13,7 @@ export const items = [
     title: "Private Enterprise “Bosch”",
     description: "Solar Panels for industrial use",
     date: "November 2023",
-    image: require("./photos/2.jpg"),
+    img: require("./photos/2.jpg"),
   },
   {
     id: 3,
@@ -21,7 +21,7 @@ export const items = [
     title: "Private Enterprise “Biotech”",
     description: "Thermal modules",
     date: "October 2023",
-    image: require("./photos/3.jpg"),
+    img: require("./photos/3.jpg"),
   },
   {
     id: 4,
@@ -29,7 +29,7 @@ export const items = [
     title: "Private Enterprise “HealthyFarm”",
     description: "Wind power",
     date: "September 2021",
-    image: require("./photos/4.jpg"),
+    img: require("./photos/4.jpg"),
   },
   {
     id: 5,
@@ -37,6 +37,6 @@ export const items = [
     title: "Private Enterprise “Biotech”",
     description: "Mini nuclear stations",
     date: "May 2021",
-    image: require("./photos/5.jpg"),
+    img: require("./photos/5.jpg"),
   },
 ];

@@ -12,7 +12,7 @@ const Card = ({ item, isVisible  }) => {
       <div>
         <img
           className={css.img}
-          src={item.image}
+          src={item.img}
           alt={item.description}
           width={200}
         />
