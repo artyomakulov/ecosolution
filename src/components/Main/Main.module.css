@@ -121,11 +121,11 @@
     margin-top: 264px;
   }
   .text_block {
-    margin-top: 272x;
+    margin-top: 272px;
     margin-right: 116px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: flex-end;
   }
   .text {
     width: 364px;
